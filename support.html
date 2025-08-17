@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoopTube 支持中心</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #111827;
+            --muted: #94a3b8;
+            --text: #e5e7eb;
+            --primary: #3b82f6;
+            --accent: #8b5cf6;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+        * { box-sizing: border-box; }
+        html, body { height: 100%; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #0b1022, #121a35 40%, #0b1022 100%);
+            color: var(--text);
+        }
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 24px 16px 64px;
+        }
+        .hero {
+            background: radial-gradient(1200px 500px at 50% -10%, rgba(59,130,246,.25), transparent 60%),
+                        radial-gradient(900px 400px at 90% 0%, rgba(139,92,246,.18), transparent 60%);
+            border-radius: 20px;
+            padding: 28px 24px;
+            border: 1px solid rgba(148,163,184,.15);
+        }
+        h1 {
+            margin: 0 0 8px 0;
+            font-size: 28px;
+            letter-spacing: .2px;
+        }
+        .subtitle { color: var(--muted); margin-top: 6px; }
+        .contact-card {
+            margin-top: 16px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(59,130,246,.1);
+            border: 1px solid rgba(59,130,246,.25);
+            color: #dbeafe;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: .18s ease;
+        }
+        .pill:hover { transform: translateY(-1px); background: rgba(59,130,246,.14); }
+
+        .grid { margin-top: 22px; display: grid; gap: 16px; }
+        @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+            border: 1px solid rgba(148,163,184,.12);
+            border-radius: 14px;
+            padding: 16px 16px;
+        }
+        .card h3 { margin: 0 0 10px 0; font-size: 18px; }
+        .card p { margin: 8px 0; color: var(--muted); line-height: 1.6; }
+        .card ul { margin: 6px 0 0 18px; color: var(--muted); }
+        .card li { margin: 6px 0; }
+        .badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: rgba(34,197,94,.15); color: #86efac; border: 1px solid rgba(34,197,94,.3); }
+        .warn  { background: rgba(245,158,11,.12); color: #fde68a; border-color: rgba(245,158,11,.35); }
+        .danger{ background: rgba(239,68,68,.12); color: #fecaca; border-color: rgba(239,68,68,.35); }
+
+        .footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+        a { color: #93c5fd; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr { border: none; border-top: 1px solid rgba(148,163,184,.14); margin: 20px 0; }
+    </style>
+    <meta name="description" content="ScoopTube 支持中心 | 常见问题、订阅与退款、恢复购买、隐私与账号删除。联系邮箱 frankchenclc@gmail.com"/>
+</head>
+<body>
+<div class="container">
+    <section class="hero">
+        <h1>ScoopTube 支持中心</h1>
+        <div class="subtitle">如果您在订阅、恢复购买或使用过程中遇到问题，这里汇总了最常见的解决方案。</div>
+        <div class="contact-card">
+            <a class="pill" href="mailto:frankchenclc@gmail.com?subject=ScoopTube%20支持请求">
+                📧 联系支持：frankchenclc@gmail.com
+            </a>
+            <span class="pill" style="background:rgba(139,92,246,.12);border-color:rgba(139,92,246,.28);color:#ede9fe;">
+                ⏱️ 工作日 24 小时内回复
+            </span>
+        </div>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <h3>1) 无法加载订阅选项 <span class="badge warn">常见</span></h3>
+            <p>若在“Choose Subscription Plan”处显示“未找到产品”，请逐条排查：</p>
+            <ul>
+                <li>检查网络与系统时间是否自动同步；</li>
+                <li>确认已登录有效的 Apple ID（App Store 应用 → 右上角头像查看）；</li>
+                <li>重新启动设备与应用；</li>
+                <li>如仍无产品，请将设备型号、系统版本、App 版本发至邮箱，我们协助核对上架与地区可用性。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>2) 已付费但功能未解锁</h3>
+            <ul>
+                <li>在应用内“Subscription Management”页面点击 <strong>Restore Purchases</strong>；</li>
+                <li>确保使用的是完成购买时的同一 Apple ID；</li>
+                <li>等待 1–3 分钟并重新打开页面；若仍未恢复，请将购买时间与截图发送至邮箱。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>3) 如何管理/取消订阅</h3>
+            <ul>
+                <li>iPhone/iPad：设置 → Apple ID → 订阅 → 选择 ScoopTube → 取消/管理；</li>
+                <li>或打开 <a href="https://apps.apple.com/account/subscriptions">App Store 订阅管理</a> 进行操作；</li>
+                <li>取消订阅后，本周期结束前仍可使用已解锁功能。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>4) 付款、发票与退款</h3>
+            <ul>
+                <li>全部付款由 Apple 处理，开发者无法直接干预订单；</li>
+                <li>可前往 <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> 申请退款或查询订单；</li>
+                <li>如需协助，请邮件提供订单号（或购买截图）。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>5) 购买时提示错误/校验失败 <span class="badge danger">排障</span></h3>
+            <ul>
+                <li>退出并重新登录 App Store 账户，再次尝试；</li>
+                <li>确保安装最新版本的 ScoopTube 与 iOS；</li>
+                <li>如使用公司/校园网络，可能拦截了与 Apple 的连接，请切换 4G/5G 或家用 Wi‑Fi；</li>
+                <li>仍失败：请邮件提供出错时间、国家/地区、设备与系统版本、问题截图。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>6) 隐私与数据</h3>
+            <ul>
+                <li>支付信息与收据均由 Apple 处理，我们无法访问您的银行卡/Apple ID 凭据；</li>
+                <li>应用仅保存必要的订阅状态与使用记录，用于解锁功能与配额统计；</li>
+                <li>详细内容请参见应用中的隐私政策。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>7) 删除账户</h3>
+            <ul>
+                <li>您可在应用中提交删除请求，或直接邮件至 <a href="mailto:frankchenclc@gmail.com">frankchenclc@gmail.com</a>；</li>
+                <li>请注明注册邮箱，我们在验证后将清除关联数据（法定保留除外）。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>8) 提交工单所需信息（可复制）</h3>
+            <ul>
+                <li>问题概述：____</li>
+                <li>设备与系统：iPad/iPhone 型号，iOS 版本</li>
+                <li>应用版本：在 App 内设置页查看</li>
+                <li>Apple ID 地区：____（例如 中国大陆/美国）</li>
+                <li>发生时间与时区：____</li>
+                <li>截图/录屏：____</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <div class="footer">
+        若本文未覆盖您的问题，请发邮件至 <a href="mailto:frankchenclc@gmail.com">frankchenclc@gmail.com</a>。<br>
+        最后更新：<span id="updatedAt"></span>
+    </div>
+</div>
+
+<script>
+    document.getElementById('updatedAt').textContent = new Date().toLocaleDateString('zh-CN', { year:'numeric', month:'2-digit', day:'2-digit' });
+</script>
+</body>
+</html>
+
+
