@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LexUp 支持中心</title>
+    <meta name="description" content="LexUp 支持中心与常见问题解答 (FAQ)">
+    <style>
+      :root {
+        --primary: #438AF7;
+        --bg: #f7f9fc;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --card: #ffffff;
+        --border: #e5e7eb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      header {
+        background: linear-gradient(180deg, rgba(67,138,247,0.12), rgba(67,138,247,0.0));
+        border-bottom: 1px solid var(--border);
+      }
+      .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+      .brand {
+        display: flex; align-items: center; gap: 12px; color: var(--primary);
+      }
+      .brand .logo {
+        width: 36px; height: 36px; border-radius: 10px; background: var(--primary);
+        display: grid; place-items: center; color: #fff; font-weight: 700;
+      }
+      h1 { margin: 0; font-size: 28px; }
+      .intro { color: var(--muted); margin-top: 8px; }
+
+      .search {
+        margin: 18px 0 10px; display: flex; gap: 10px;
+      }
+      .search input {
+        flex: 1; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; font-size: 14px;
+        outline: none;
+      }
+      .search button {
+        padding: 10px 14px; background: var(--primary); color: #fff; border: none; border-radius: 10px; cursor: pointer;
+      }
+
+      .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 18px; }
+      .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+      .card h3 { margin: 0 0 10px; font-size: 18px; }
+      .faq details { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+      .faq details + details { margin-top: 10px; }
+      summary { cursor: pointer; font-weight: 600; }
+      .answer { color: var(--muted); margin-top: 8px; }
+
+      .contact {
+        background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px;
+        display: grid; gap: 6px;
+      }
+      .contact a { color: var(--primary); text-decoration: none; }
+      footer { color: var(--muted); font-size: 12px; text-align: center; padding: 24px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="brand">
+          <div class="logo">L</div>
+          <div>
+            <h1>LexUp 支持中心</h1>
+            <div class="intro">快速找到答案，顺畅使用 LexUp 英语学习应用。</div>
+          </div>
+        </div>
+        <div class="search" role="search">
+          <input type="search" placeholder="搜索问题关键词（如：登录、订阅、写作）" aria-label="搜索常见问题">
+          <button aria-label="开始搜索" onclick="alert('请使用浏览器内置查找或目录分类浏览')">搜索</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="cards" aria-label="快速分类">
+        <div class="card">
+          <h3>账号与登录</h3>
+          <p class="answer">登录失败请检查邮箱与密码是否正确，或稍后重试网络连接。</p>
+        </div>
+        <div class="card">
+          <h3>订阅与试用</h3>
+          <p class="answer">订阅用于解锁全部功能；试用期结束后可在应用内续订。</p>
+        </div>
+        <div class="card">
+          <h3>学习与练习</h3>
+          <p class="answer">支持背单词、阅读题练、AI 写作与专项训练，多模态提升。</p>
+        </div>
+      </section>
+
+      <section class="faq" aria-label="常见问题">
+        <h2>常见问题（FAQ）</h2>
+
+        <details>
+          <summary>1. 登录提示失败怎么办？</summary>
+          <div class="answer">请确认邮箱与密码无误，网络畅通。仍有问题请尝试重启应用或稍后再试。</div>
+        </details>
+        <details>
+          <summary>2. 如何恢复/重置密码？</summary>
+          <div class="answer">可在登录页选择“忘记密码”，按提示操作；若未收到邮件，请检查垃圾箱。</div>
+        </details>
+        <details>
+          <summary>3. 订阅未生效或试用到期如何处理？</summary>
+          <div class="answer">请在“订阅状态”页刷新。如仍未生效，请联系支持并附上购买凭证。</div>
+        </details>
+        <details>
+          <summary>4. 如何进行阅读中的题目练习？</summary>
+          <div class="answer">在内置浏览器或文章页面长按选中文本，选择“题目练习”即可生成练习。</div>
+        </details>
+        <details>
+          <summary>5. 写作练习如何得到 AI 反馈？</summary>
+          <div class="answer">在“写作练习”中提交答案后，系统将给出要点匹配与语言表达的评价与改进建议。</div>
+        </details>
+        <details>
+          <summary>6. 数据与隐私如何保护？</summary>
+          <div class="answer">我们遵循最小化收集原则，仅用于提供与改进服务，绝不出售个人数据。</div>
+        </details>
+        <details>
+          <summary>7. 如何导出或清理学习数据？</summary>
+          <div class="answer">可在应用“设置”中查看与管理数据；如需导出/删除，可联系支持邮箱处理。</div>
+        </details>
+      </section>
+
+      <section class="contact" aria-label="联系支持">
+        <h2>联系支持</h2>
+        <p>如未找到答案，请通过邮箱联系我们：</p>
+        <p><a href="mailto:frankchenclc@gmail.com">frankchenclc@gmail.com</a></p>
+        <p class="answer">我们通常在 1-2 个工作日内回复。</p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> LexUp. 保留所有权利。
+    </footer>
+
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
+
+
